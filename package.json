@@ -28,7 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@rviso/commitlint-config": "^0.1.0",
-    "@rviso/eslint-config": "^0.1.9",
+    "@rviso/eslint-config": "^0.2.0",
     "@rviso/stylelint-config": "^0.1.0",
     "@tauri-apps/cli": "^1",
     "@vitejs/plugin-vue": "^5.0.4",

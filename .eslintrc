@@ -3,15 +3,8 @@
   "extends": ["@rviso/eslint-config"],
   "overrides": [
     {
-      "files": ["*.toml"],
-      "rules": {
-        "prettier/prettier": "off"
-      }
-    },
-    {
       "files": ["*.vue"],
       "rules": {
-        "prettier/prettier": "off",
         "@typescript-eslint/consistent-type-imports": [
           "error",
           { "prefer": "type-imports", "disallowTypeAnnotations": false }
