@@ -1,3 +1,14 @@
 {
-  "extends": ["@rviso/eslint-config"]
+  "root": true,
+  "extends": ["@rviso/eslint-config"],
+  "overrides": [
+    {
+      "files": ["*.toml"],
+      "extends": ["plugin:toml/standard"],
+      "parser": "toml-eslint-parser",
+      "rules": {
+        "prettier/prettier": "off"
+      }
+    }
+  ]
 }

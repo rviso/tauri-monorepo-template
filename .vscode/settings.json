@@ -17,7 +17,9 @@
     "json",
     "jsonc",
     "markdown",
-    "yaml"
+    "yaml",
+    "yml",
+    "toml"
   ],
   "stylelint.enable": true,
   "stylelint.validate": [

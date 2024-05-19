@@ -1,8 +1,8 @@
 {
   "name": "rviso-app",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "description": "This is a Rviso's workspace hub",
   "author": "lingann",
   "license": "Apache License",
@@ -26,12 +26,18 @@
     "tauri": "tauri"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
     "@rviso/commitlint-config": "^0.1.0",
-    "@rviso/eslint-config": "^0.1.1",
+    "@rviso/eslint-config": "^0.1.9",
     "@rviso/stylelint-config": "^0.1.0",
     "@tauri-apps/cli": "^1",
     "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.0.2",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.2",
+    "stylelint": "^15.11.0",
+    "typescript": "^5.4.5",
     "vite": "^5.0.0",
     "vitest": "^1.6.0",
     "vue-tsc": "^1.8.5"
@@ -43,11 +49,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,vue,html}": [
-      "eslint",
-      "stylelint"
+    "*.{js,jsx,ts,tsx,vue,html,toml,json}": [
+      "eslint"
     ],
-    "*.{scss,less,style}": [
+    "*.{vue,html,scss,less,style}": [
       "stylelint"
     ]
   }

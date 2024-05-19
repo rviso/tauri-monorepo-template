@@ -11,13 +11,16 @@
 
     // --- Vue ---
     "vue.volar", // Vue Official Plugin
-    
+
     // --- Testing ---
     "Vitest.vitest-vscode", // Vite Test
-  
+
     // --- Tauir ---
-    "tauri-apps.tauri-vscode", // Tauri
+    "serayuzgur.crates", // 配置 Rust Crates ，用于 Tauri
+    "tauri-apps.tauri-vscode", // Tauri VSCode Plugin
     "rust-lang.rust-analyzer", // Rust Analyzer
     "jinxdash.prettier-rust", // Prettier for Rust
+    "1yib.rust-bundle", // Rust Bundle
+    "dustypomerleau.rust-syntax" // Rust Syntax Highlighting
   ]
 }

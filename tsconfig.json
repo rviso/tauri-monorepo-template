@@ -36,7 +36,7 @@
     "emitDecoratorMetadata": true, // 为装饰器提供元数据支持
 
     /* Type Modules Parsing */
-    "types": ["vitest/globals"],
+    "types": ["vitest/globals"]
   },
   "references": [{ "path": "./tsconfig.node.json" }]
 }
