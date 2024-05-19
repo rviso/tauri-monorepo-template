@@ -42,3 +42,7 @@ lib
 es
 bin
 public
+
+
+# Cargo files
+Cargo.lock
