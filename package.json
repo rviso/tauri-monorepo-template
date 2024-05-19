@@ -1,0 +1,53 @@
+{
+  "name": "rviso-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "This is a Rviso's workspace hub",
+  "author": "lingann",
+  "license": "Apache License",
+  "homepage": "https://github.com/rviso/rviso-hub",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rviso/rviso-hub.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rviso/rviso-hub/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev:ui": "pnpm run --filter @app/ui dev",
+    "build:ui": "pnpm run --filter @app/ui build",
+    "dev:preview": "pnpm run --filter @app/ui preview",
+    "dev": "pnpm run tauri dev",
+    "build": "pnpm run tauri build",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@rviso/commitlint-config": "^0.1.0",
+    "@rviso/eslint-config": "^0.1.1",
+    "@rviso/stylelint-config": "^0.1.0",
+    "@tauri-apps/cli": "^1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.0.2",
+    "vite": "^5.0.0",
+    "vue-tsc": "^1.8.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue,html}": [
+      "eslint",
+      "stylelint"
+    ],
+    "*.{scss,less,style}": [
+      "stylelint"
+    ]
+  }
+}

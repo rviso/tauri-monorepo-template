@@ -1,0 +1,3 @@
+{
+  "extends": ["@rviso/eslint-config"]
+}

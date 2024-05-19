@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    // --- General ---
+    "dbaeumer.vscode-eslint", // ESLint
+    "editorconfig.editorconfig", // EditorConfig for VS Code
+    "esbenp.prettier-vscode", // Prettier - Code formatter
+    "redjue.git-commit-plugin",
+    "rvest.vs-code-prettier-eslint", // Prettier ESLint
+    "streetsidesoftware.code-spell-checker", // Code Spell Checker
+    "stylelint.vscode-stylelint", // Stylelint
+
+    // --- Vue ---
+    "vue.volar", // Vue Official Plugin
+    
+    // --- Testing ---
+    "Vitest.vitest-vscode", // Vite Test
+  
+    // --- Tauir ---
+    "tauri-apps.tauri-vscode", // Tauri
+    "rust-lang.rust-analyzer", // Rust Analyzer
+    "jinxdash.prettier-rust", // Prettier for Rust
+  ]
+}

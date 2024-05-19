@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "app/core",
+    "crates/bindings",
+]
+
+[workspace.dependencies]
+bindings = { path = "crates/bindings" }
+core = { path = "app/core" }
