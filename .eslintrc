@@ -1,15 +1,4 @@
 {
   "root": true,
-  "extends": ["@rviso/eslint-config"],
-  "overrides": [
-    {
-      "files": ["*.vue"],
-      "rules": {
-        "@typescript-eslint/consistent-type-imports": [
-          "error",
-          { "prefer": "type-imports", "disallowTypeAnnotations": false }
-        ] // 类型导入
-      }
-    }
-  ]
+  "extends": ["@rviso/eslint-config"]
 }

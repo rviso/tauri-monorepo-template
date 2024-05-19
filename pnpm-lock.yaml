@@ -15,8 +15,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(@commitlint/cli@19.3.0)
       '@rviso/eslint-config':
-        specifier: ^0.2.0
-        version: 0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
+        specifier: ^0.2.1
+        version: 0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
       '@rviso/stylelint-config':
         specifier: ^0.1.0
         version: 0.1.0(prettier@3.2.5)(stylelint@15.11.0)
@@ -56,6 +56,9 @@ importers:
 
   app/ui:
     dependencies:
+      '@app/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       '@tauri-apps/api':
         specifier: ^1
         version: 1.5.6
@@ -741,8 +744,8 @@ packages:
       '@commitlint/config-conventional': 17.8.1
     dev: true
 
-  /@rviso/eslint-config-standard@0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5):
-    resolution: {integrity: sha512-VDdVvz9jdo47fMz+3b7MPvuFylOV8NiXNqyRhwz4bdqTHuQUiVrntIeWawqkaBVe60I+LPYKtGv6+ba+i5rCLw==}
+  /@rviso/eslint-config-standard@0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5):
+    resolution: {integrity: sha512-lZQnTNDqerbYXt7fSOFA1YcoftzscOib7KrUCYay6rzYeyt71iV+uhpJy+4wPvw0lCpghDXMcE/+WkXcCCspQw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.0.1'
@@ -773,14 +776,14 @@ packages:
       - supports-color
     dev: true
 
-  /@rviso/eslint-config-typescript@0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5):
-    resolution: {integrity: sha512-u590P/DgIcUV9KDp2xGzjEIFfnmpBCPGu/RyMi3BzHEyDN+J4SJ70fzLpd04hqWJNlFqpCBI9ww7Jf1QqEWexA==}
+  /@rviso/eslint-config-typescript@0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5):
+    resolution: {integrity: sha512-Z3OPPBhFgiWpwTwHWgMdAMqR0YXr0mk0MzpGIA8UpqLsZP04Zd1NxOPR9I5ok1OjoDMLxmTTtkdO2IODr8wp7g==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.0.1'
       typescript: '>=4.9.5'
     dependencies:
-      '@rviso/eslint-config-standard': 0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
+      '@rviso/eslint-config-standard': 0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.57.0)(typescript@5.4.5)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.4.5)
       eslint: 8.57.0
@@ -794,13 +797,13 @@ packages:
       - supports-color
     dev: true
 
-  /@rviso/eslint-config-vue@0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5):
-    resolution: {integrity: sha512-eDQgssXsiYDRAHRYeiN6cDLhedgovC6IUUbfxc11Wh+M6XvBpsCcOAXffDsCHx/RETQ+nokbDW68RF2aIMRBKw==}
+  /@rviso/eslint-config-vue@0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5):
+    resolution: {integrity: sha512-l5l+uK+pk1xFksYE02uS1vCZCREZ7Laj1mv4OoY7REWfU91lVdsVGvyVMlyP/afORjOXlm9DYAztjfDhsJhlPA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.0.1'
     dependencies:
-      '@rviso/eslint-config-standard': 0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
+      '@rviso/eslint-config-standard': 0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
       eslint: 8.57.0
       eslint-plugin-vue: 9.26.0(eslint@8.57.0)
     transitivePeerDependencies:
@@ -812,16 +815,16 @@ packages:
       - supports-color
     dev: true
 
-  /@rviso/eslint-config@0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5):
-    resolution: {integrity: sha512-XefQ0mRwQPItBh+4ssee2XcNUL3h/NYHRpFIm495kZrUeLZHeDRGv8UVfs4l5uQF+dAf8MUFa1HlsnfOUrXz5Q==}
+  /@rviso/eslint-config@0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5):
+    resolution: {integrity: sha512-1CsFoVYRePbhMEa/M3XI2R8+y3OmrP5GMYt2GM/IIgRNbp6kD0kb8n02gHYPZF/rAGoGSQ65t2EISOFLir3kGw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       eslint: '>=8.0.1'
       typescript: '>=4.9.5'
     dependencies:
-      '@rviso/eslint-config-standard': 0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
-      '@rviso/eslint-config-typescript': 0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
-      '@rviso/eslint-config-vue': 0.2.0(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
+      '@rviso/eslint-config-standard': 0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
+      '@rviso/eslint-config-typescript': 0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.5)
+      '@rviso/eslint-config-vue': 0.2.1(eslint-plugin-import@2.29.1)(eslint-plugin-n@15.7.0)(eslint-plugin-promise@6.1.1)(eslint@8.57.0)(prettier@3.2.5)
       eslint: 8.57.0
       typescript: 5.4.5
     transitivePeerDependencies:

@@ -1,18 +1,18 @@
 {
-  "name": "rviso-app",
+  "name": "tauri-monorepo-template",
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "description": "This is a Rviso's workspace hub",
+  "description": "This is a ",
   "author": "lingann",
   "license": "Apache License",
-  "homepage": "https://github.com/rviso/rviso-hub",
+  "homepage": "https://github.com/rviso/tauri-monorepo-template",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rviso/rviso-hub.git"
+    "url": "git+https://github.com/rviso/tauri-monorepo-template.git"
   },
   "bugs": {
-    "url": "https://github.com/rviso/rviso-hub/issues"
+    "url": "https://github.com/rviso/tauri-monorepo-template/issues"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@rviso/commitlint-config": "^0.1.0",
-    "@rviso/eslint-config": "^0.2.0",
+    "@rviso/eslint-config": "^0.2.1",
     "@rviso/stylelint-config": "^0.1.0",
     "@tauri-apps/cli": "^1",
     "@vitejs/plugin-vue": "^5.0.4",

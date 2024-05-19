@@ -1,3 +1,3 @@
-export {}
-
-export const shared = 'shared'
+export const getLocalDateTime = (date: Date): string => {
+  return date.toLocaleString()
+}
