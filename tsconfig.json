@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2020", // 使用 ES2020 语法
+    "useDefineForClassFields": true, // 使用类字段定义
+    "module": "ESNext", // 使用 ESNext 模块
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // 使用 ES2020 标准库
+    "skipLibCheck": true, // 跳过库检查，提高编译速度
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // 使用 bundler 模式，bundle 时会自动移除无用代码
+    "allowImportingTsExtensions": true, // 允许导入 .ts 文件. 例如 import './foo.ts'
+    "resolveJsonModule": true, // 允许导入 JSON 文件. 例如 import './foo.json'
+    "isolatedModules": true, // 将每个文件做为单独的模块 （与 'ts.transpileModule' 类似）.
+    "noEmit": true,
+    "jsx": "preserve",
+    "jsxFactory": "VueTsxSupport",
+
+    /* Linting */
+    "strict": true, // 启用所有严格类型检查选项
+    "alwaysStrict": true, // 总是使用严格模式
+    "noImplicitAny": true, // 不允许隐式 any 类型
+    "noImplicitReturns": true, // 不允许隐式返回值
+    "noImplicitThis": true, // 不允许隐式 this
+    "noUnusedLocals": true, // 不允许未使用的局部变量
+    "noUnusedParameters": true, // 不允许未使用的参数
+    "noFallthroughCasesInSwitch": true, // 不允许 switch 语句的 case 语句贯穿
+    "preserveConstEnums": true, // 保留 const 枚举
+
+    /* Source Map Options */
+    "sourceMap": true, // 生成 sourceMap 文件
+    "inlineSources": true, // 将代码与 sourcemap 保存到一个文件中
+
+    /* Experimental Options */
+    "experimentalDecorators": true, // 启用装饰器
+    "emitDecoratorMetadata": true, // 为装饰器提供元数据支持
+
+    /* Type Modules Parsing */
+    "types": ["vitest/globals"],
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

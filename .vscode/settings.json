@@ -1,8 +1,73 @@
 {
-    "cSpell.words": [
-        "commitlint",
-        "rviso",
-        "stylelint",
-        "tauri"
-    ]
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": false, // 默认情况下使用prettier格式化代码 , 每次保存的时候自动格式化Prettier
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "vue-html",
+    "json",
+    "jsonc",
+    "markdown",
+    "yaml"
+  ],
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    // 配置stylelint检查的文件类型范围
+    "css",
+    "scss",
+    "less",
+    "sass",
+    "postcss",
+    "vue"
+  ],
+  // =============== 为特定的语言配置格式化程序 ===============
+  "[scss]": {
+    // 配置scss文件使用prettier + stylelint格式化
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[sass]": {
+    // 配置scss文件使用prettier + stylelint格式化
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    // 配置scss文件使用prettier + stylelint格式化
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    // 配置scss文件使用prettier + stylelint格式化
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  // =============== 配置Git提交信息插件 ===============
+  "git.enableSmartCommit": true,
+  "GitCommitPlugin.MaxSubjectCharacters": 72,
+
+  // =============== 配置测试插件 ===============
+  "vitest.commandLine": "pnpm test --",
+  "vitest.enable": true,
+
+  // =============== 配置代码拼写检查 ===============
+  "cSpell.words": ["commitlint", "rviso", "stylelint", "tauri"]
 }
